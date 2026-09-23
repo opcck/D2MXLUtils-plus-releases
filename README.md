@@ -1,0 +1,794 @@
+# D2MXLUtils-plus Releases
+
+本仓库为 **D2MXLUtils-plus** 的官方公开发布与自动更新分发仓库。
+
+- 📦 **最新版下载**：请前往右侧 Releases 页面获取最新版可执行程序（d2mxlutils_plus.exe）。
+- 📝 **更新日志**：详见下方或查阅 CHANGELOG.md。
+
+---
+
+# Changelog
+
+## v1.28.19 — 2026-09-23
+
+### Bug Fixes
+
+- Fix: 修复bug
+
+## v1.28.18 — 2026-09-23
+
+### Bug Fixes
+
+- Fix(ci): 修复 release.yml 中同步文档步骤的 YAML 格式 (153c90b)
+
+### Features
+
+- Feat: 窗口与界面标题全面升级Plus标识，更新分发源切换至独立公开发布仓，升级至 v1.28.18 (dc0f1ab)
+
+## v1.28.17 — 2026-09-23
+
+### Miscellaneous
+
+- Chore: 统一可执行文件产物名为 d2mxlutils_plus.exe，升级至 v1.28.17 (2be95de)
+
+## v1.28.16 — 2026-09-23
+
+### Features
+
+- Feat: 支持启动自动检查与更新说明弹窗提示，集成国内镜像加速备用源，升级至 v1.28.16 (f0a4555)
+
+## v1.28.15 — 2026-09-22
+
+### Features
+
+- Feat: 辅助功能增加自动按键(自动技能)与双栏紧凑UI，支持游戏内开启/关闭文字提醒与开关快捷键，升级至 v1.28.15 (05a1d91)
+
+## v1.28.14 — 2026-09-21
+
+### Features
+
+- Feat: 重构自动拾取多条件筛选引擎，优化掉落过滤手动保存按钮，升级至 v1.28.14 (1331409)
+
+## v1.28.13 — 2026-09-20
+
+### Bug Fixes
+
+- Fix: 彻底修复物品悬停 6fb422e5 (Line #1842) 崩溃，实施注入桩安全校验与悬停防抖缓存 (v1.28.13) (462b472)
+
+## v1.28.12 — 2026-09-19
+
+### Features
+
+- Feat(radar): 小地图怪物雷达支持Boss/精英/普通怪色彩与形状区分，接入D2Sigma底层持久血条判断并放大标记尺寸 (v1.28.12) (613fbdd)
+
+## v1.28.11 — 2026-09-19
+
+### Features
+
+- Feat(filter): 添加掉落过滤规则可视化生成器，支持全部14个功能字段并根据官方文本表校正中英文名词 (v1.28.11) (826a3b6)
+
+## v1.28.10 — 2026-09-19
+
+### Bug Fixes
+
+- Fix: 修复自动拾取pickup=2优先放入方块失效问题，支持方块CID 1204与字符串Base Code解析 (v1.28.10) (569fdbc)
+
+## v1.28.9 — 2026-09-19
+
+### Features
+
+- Feat: 物品悬浮窗增加底材代码(Base Code)高亮展示并精准修正偏移至0x80 (v1.28.9) (da76c01)
+
+## v1.28.8 — 2026-09-18
+
+### Bug Fixes
+
+- Fix: 适配2.14.3物品Tooltip钩子偏移至0xB5070并增加动态特征码定位，支持地面物品展示 (7bb1028)
+
+### Features
+
+- Feat: 拆分为怪物与物品双独立悬浮窗，怪物ID常驻显示，放宽物品读取限制 (v1.28.8) (0f7c5b2)
+
+## v1.28.7 — 2026-09-18
+
+### Bug Fixes
+
+- Fix: 修复选定单位全局偏移与哈希表寻址逻辑，彻底打通怪物与物品实时侦测 (v1.28.7) (e9bda1d)
+
+## v1.28.6 — 2026-09-18
+
+### Features
+
+- Feat: 将目标信息与抗性接入原生浮窗系统，支持拖拽定位与常驻显示 (v1.28.6) (fd68368)
+
+## v1.28.5 — 2026-09-18
+
+### Refactor
+
+- Refactor: 彻底移除机器码Hook，重构为安全只读Overlay悬浮HUD架构 (v1.28.5) (d3e6b2d)
+
+## v1.28.4 — 2026-09-18
+
+### Bug Fixes
+
+- Fix: 修复生命条与物品信息栈溢出崩溃Bug，重构左右双列紧凑UI卡片 (v1.28.4) (e9086cd)
+
+## v1.28.3 — 2026-09-18
+
+### Features
+
+- Feat: 原生移植集成 HackMap 怪物抗性ID血条与物品详细信息显示 (v1.28.3) (1a22251)
+
+## v1.28.2 — 2026-09-18
+
+### Miscellaneous
+
+- Chore(release): 发布新版本 v1.28.2 (优化UI文案) (85ad30a)
+
+### Styling
+
+- Style(assist): 移除自动拾取标题下方的开发者描述小字 (1ac2af8)
+
+## v1.28.1 — 2026-09-18
+
+### Features
+
+- Feat(portable): 便携化改造，配置与缓存统一收拢至 exe 同级 config 目录 (562b2f9)
+
+### Miscellaneous
+
+- Chore(release): 发布新版本 v1.28.1 (支持便携化运行与数据隔离) (2427d24)
+
+## v1.28.0 — 2026-09-18
+
+### Bug Fixes
+
+- Fix(assist): use UnitStatsReader for vitals composite max hp/mana and enable tab scrolling (dcfacc5)
+- Fix(auto_belt): complete rewrite of potion auto belt replenish based on hackmap reverse engineering (fd6e5c1)
+- Fix(auto_belt): fix potion replenishment with native 0x63 packet, D2Client SendPacket call, and remove ground pickup (f1ecb13)
+
+### Changes
+
+- Update README.md (8600097)
+- Update README.md (8082158)
+- Update README.md (c2fee45)
+
+### Documentation
+
+- Docs: 添加 D2MXLUtils 汉化与添加功能合并 hackmap 任务总结文档 (e412049)
+- Docs(reference): upload hackmap-rs source for reference and retention (63303bd)
+
+### Features
+
+- Feat(auto-pickup): 新增侵入式自动拾取功能 (Auto Pickup) (0ad288d)
+- Feat(assist): add Assist tab and 3-slot custom auto potion system (53007da)
+- Feat(shadow): add remove unit and scene shadows tweak and UI toggle (2d8ac99)
+- Feat: integrate Hackmap QoL features (monster radar, continuous attack, auto belt) (37d4d4d)
+- Feat: 界面与文档全量中文汉化 (v0.2.0-zh) (1ceb4d0)
+
+### Miscellaneous
+
+- Chore(release): 发布新版本 v1.28.0 (新增侵入式自动拾取系统) (81656f8)
+
+### Styling
+
+- Style: 更新主窗口右下角标识为汉化+辅助魔改：西西 (36cbc57)
+
+## v1.27.8 — 2026-09-12
+
+### Bug Fixes
+
+- Fix(notifier): include activation frequency stat (c1b65e9)
+
+## v1.27.7 — 2026-09-11
+
+### Bug Fixes
+
+- Fix(hovered-item): relocate tooltip hook offset for latest MXL patch (1342a37)
+
+### Features
+
+- Feat(hovered-item): diagnose tooltip hook relocation via AOB signature scan (2986aff)
+- Feat(item-search): add verbose logging and clamp tooltip into viewport (7015fd9)
+
+## v1.27.6 — 2026-09-11
+
+### Refactor
+
+- Refactor: organize backend by business feature (a19d9c4)
+
+## v1.27.5 — 2026-09-09
+
+### Bug Fixes
+
+- Fix(map-marker): constrain tail-child recovery and record quarantine causes (46a06f5)
+
+### Features
+
+- Feat(notifier): read level and sockets through validated acquisition (312dc9f)
+- Feat(damage): use direct-first stats without changing formulas (1dacf4d)
+- Feat(breakpoints): use direct-first stat acquisition (7b57fe7)
+- Feat(stats): prefer direct bulk acquisition for character sheets (719fedf)
+- Feat(stats): add validated direct reader with bounded legacy fallback (44b419a)
+- Feat(telemetry): observe stat acquisition and injector attempts per session (936478f)
+
+### Miscellaneous
+
+- Chore: enforce consistent line endings (854cdbb)
+
+### Refactor
+
+- Refactor: keep telemetry and marker regression modules focused (9acd173)
+
+## v1.27.4 — 2026-09-09
+
+### Bug Fixes
+
+- Fix(map-marker): stabilize capped markers and quarantine uncertain cells (792f59a)
+
+### CI
+
+- Ci: upload Windows build artifact on manual workflow_dispatch runs (426fe8f)
+
+### Documentation
+
+- Docs(map-marker): distinguish partial correction from historical investigation (7ca163d)
+
+### Features
+
+- Feat: direct memory stat reads, safer loot-filter eject, self-owned marker cells (072fa31)
+
+### Miscellaneous
+
+- Chore(gitignore): ignore local OMO continuation artifacts (680c99d)
+
+### Other
+
+- Revert: back out direct memory stat reads, loot-filter eject rework, marker cell rewrite (PR #13) (9e7a36f)
+
+## v1.27.2 — 2026-09-08
+
+### Bug Fixes
+
+- Fix(map-marker): rotate the marker cache when over the cell cap (e296ab4)
+- Fix(map-marker): recycle automap cells instead of leaking them per rebuild (bb364bb)
+
+### Features
+
+- Feat(loot-filter): add unique rarity tier filtering (tu/su/ssu/sssu) (bac6031)
+
+## v1.27.1 — 2026-09-07
+
+### Bug Fixes
+
+- Fix(breakpoints): match wereform/merc/block breakpoints to the reference calculator (eabf7c8)
+- Fix(main): back off scanner reattach and throttle breakpoints polling (a8d2e5f)
+- Fix(map-marker): stop crashes and memory leaks around area transitions (7f8a290)
+
+## v1.27.0 — 2026-09-06
+
+### Bug Fixes
+
+- Fix: relocate tooltip-item hook offset for MXL 2.14's D2Sigma.dll (4c63819)
+- Fix(ci): rename release AppImage with capital ".AppImage" extension (b62d5f2)
+- Fix(updater): match the renamed AppImage asset case-insensitively (ccff37f)
+- Fix(stats): compute Charms locally instead of trusting the engine's counter (0337095)
+- Fix(breakpoints): cache last-known data across tab switches (e703648)
+- Fix(stats): show cached data instantly and stop per-tick flicker on read failures (240909d)
+- Fix(stats): correct Life/Mana-per-point class factors, document Azurewrath (ba8cd3c)
+- Fix(stats): correct Spell Focus formula and layout tweaks (b199eb7)
+- Fix(rules-editor): persist group-rule fold state across tab switches and restarts (5ce20df)
+- Fix(unique-stats-db): publish locally instead of via CI (blocked outright) (8cb794f)
+- Fix(map-marker): clear persistent cache on real area/act change (ca36b63)
+- Fix(windows): close CreateRemoteThread's handle — was leaked on every injected call (9d012a9)
+- Fix(ci): discard stray Cargo.toml modification before rebasing changelog (e4cc2db)
+- Fix(ci): rebase before pushing the changelog commit, don't just push and pray (ef72810)
+- Fix(ci): explicitly dispatch the release build instead of relying on the tag-push cascade (1b20767)
+- Fix(map-marker): attach markers as pObjects leaves, not root swaps (6b82a5f)
+- Fix(updater): add real Linux AppImage self-update support (c1fdf23)
+- Fix(ui): dark-mode select popups and tab-content overflow containment (c28a9be)
+- Fix(linux): unconditionally disable WebKitGTK's DMA-BUF renderer (6261605)
+- Fix(overlay): fix focus-stealing prevention after alt-tab on Linux (c769a48)
+- Fix(overlay): explicitly refocus D2 instead of trusting WM implicit behavior (73bdb57)
+- Fix(overlay): dedupe notification toasts by unit_id (140b7eb)
+- Fix(sounds): route Linux audio through rodio directly, never <audio> (30c9cbd)
+- Fix(ci): stand in an empty gdk-pixbuf loaders dir for linuxdeploy's gtk plugin (6158548)
+- Fix(ci): install gdk-pixbuf2 for linuxdeploy's gtk plugin (331ea55)
+- Fix(ci): install fuse2 for linuxdeploy's AppImage runtime (b352dac)
+- Fix(ci): build the Linux AppImage inside an Arch container (d276344)
+- Fix(ci): install libasound2-dev for rodio's alsa-sys build (ea623af)
+- Fix(ci): unescaped # in release name expression broke YAML parsing (49ea451)
+
+### CI
+
+- Ci(debug): use --verbose on the real build instead of standalone probes (258e880)
+- Ci(debug): test env-var-only invocation and the appimage output plugin (22eb1ae)
+- Ci(debug): run linuxdeploy directly to surface its real error (1ac0763)
+- Ci: fix linuxdeploy under container (FUSE) + let manual runs pick a platform (3b904fc)
+- Ci: fix release step for workflow_dispatch (needs a real tag) (7071a7f)
+- Ci: allow manual test runs via workflow_dispatch (629d125)
+- Ci: add Linux AppImage build/release job (1a4566c)
+
+### Documentation
+
+- Docs: document release:skip convention for doc-only PRs (51b2827)
+- Docs: consolidate AGENTS.md into CLAUDE.md (8fdd673)
+
+### Features
+
+- Feat: add toggle for "Items hidden" overlay indicator (dea8b8a)
+- Feat: add manual refresh button for game data caches (26775c3)
+- Feat(stats): cap displayed elemental/poison max resist at 90% (0d32d3e)
+- Feat(stats): add full character Stats tab (2d188a5)
+- Feat(rules-editor): highlight and autocomplete class/level DSL keywords (a851751)
+- Feat(rules-editor): autocomplete bare DSL keywords (3a0e757)
+- Feat(loot-filter): add live "show matches" rule highlighting (aeb783f)
+- Feat(rules-editor): add code folding for group rules (19c0ff8)
+- Feat(unique-stats-db): publish + auto-sync the roll-range template DB (580af1e)
+- Feat(ci): auto-release on merge to master; build Windows/Linux in parallel (2dd3923)
+- Feat(release): add pnpm release shortcut, defaulting to patch (9161fb7)
+- Feat(dev): add F12 devtools shortcut (557f00f)
+- Feat(loot-filter): add quest filter keyword (c6ed195)
+- Feat: unique/set roll-range annotations and create-game autofill (87c3c43)
+- Feat(loot-filter): add clvl/ilvl and character-class filter keywords (b8358b1)
+- Feat(linux): native Linux port (process attach, injection, overlay, hotkeys) (aeff831)
+
+### Miscellaneous
+
+- Chore(release): prepare v1.27.0 (778ad10)
+
+### Refactor
+
+- Refactor(ui): custom Select component replacing native <select> (661cc32)
+
+## v1.26.0 — 2026-05-17
+
+### Bug Fixes
+
+- Fix(notifier): use lazy static item enrichment (0772ab4)
+
+### Features
+
+- Feat(item-search): add indexed typeahead search (59e4cbb)
+- Feat(overlay): add draggable overlay windows (61c8e53)
+- Feat(overlay): polish loot history panel UX (e37e438)
+- Feat(item-search): add in-game MXL item lookup (ae50e7c)
+
+### Miscellaneous
+
+- Chore: ignore worktree directories (4f468cc)
+
+## v1.25.0 — 2026-05-13
+
+### Bug Fixes
+
+- Fix(hotkeys): support auxiliary mouse buttons (ceaab6a)
+- Fix(ci): keep release automation out of notes (adae543)
+- Fix(notifications): support larger preview sizes (924000a)
+- Fix(editor): restore line numbers and socket reference (2588f48)
+- Fix(loot-filter): stabilize automap marker reconciliation (20c6c96)
+- Fix(scanner): cap item memory walks (d767201)
+
+### Features
+
+- Feat(settings): add auto /nopickup toggle (ec02674)
+- Feat(notifications): boost text contrast at low opacity (153b229)
+- Feat(notifications): show matched stat lines (dce1845)
+
+## v1.24.0 — 2026-05-11
+
+### Bug Fixes
+
+- Fix(loot-filter): process BFS-only item candidates (f634595)
+- Fix(dps-meter): show meter only in active games (83151b8)
+- Fix(loot-filter): harden hook mask cleanup lifecycle (ff4e2b5)
+- Fix(dps-meter): restore hook lifecycle across restarts (d7f9b36)
+- Fix(overlay): hide chrome when game is minimized (aedd7ff)
+- Fix(overlay): restore single-window reposition mode (0a3db83)
+
+### Documentation
+
+- Docs: update formatting and loot notes (1be0b23)
+- Docs: drop landed plans and specs for past features (59a457d)
+
+### Features
+
+- Feat(overlay): unified widget repositioning module (6929406)
+- Feat(dps-meter): add live DPS overlay via inline hook on Ord10887 (a613a50)
+
+### Miscellaneous
+
+- Chore(format): enforce project formatters (549bcde)
+
+### Performance
+
+- Perf(loot-filter): reduce large-filter matching latency (3394422)
+
+### Refactor
+
+- Refactor(loot-filter): remove unused filter toggle (40c3e4a)
+
+## v1.23.0 — 2026-05-06
+
+### Bug Fixes
+
+- Fix(loot-filter): skip runtime-name match for rare items (34c2ae3)
+
+### Features
+
+- Feat(sounds): add goblin alert with selectable sound (a231acf)
+
+## v1.22.0 — 2026-05-05
+
+### Bug Fixes
+
+- Fix(loot-filter): scan full D2Sigma.dll instead of hardcoded 2MB (79bbe1f)
+- Fix(scanner): AOB-resolve always-show-items struct after MXL patch (f9f5721)
+
+### Features
+
+- Feat(logger): throttle errors per call site and rotate log file (c69d8c9)
+
+### Other
+
+- Revert "fix(scanner): disable auto always-show-items after MXL patch broke offset" (ac3fc4c)
+
+## v1.21.0 — 2026-05-05
+
+### Bug Fixes
+
+- Fix(scanner): disable auto always-show-items after MXL patch broke offset (bc3f8df)
+- Fix(loot-filter): widen hook masks to 16 bits and clear bits on item disappear (c9dc531)
+- Fix(ci): checkout master branch before pushing changelog (303b637)
+
+### Documentation
+
+- Docs(breakpoints): add design spec and implementation plan (0c4e282)
+
+### Features
+
+- Feat(sounds): add dedicated Sounds tab with per-slot volume and custom files (99df603)
+- Feat(breakpoints): add Breakpoints tab with live attack/cast/recovery FPA (3d0cba7)
+
+### Other
+
+- Gitignore (3aaac86)
+
+## v1.20.1 — 2026-05-02
+
+### Bug Fixes
+
+- Fix(ci): generate changelog before build so binary embeds current version (8f8ea3a)
+
+## v1.20.0 — 2026-05-02
+
+### Bug Fixes
+
+- Fix(hotkeys): suppress polling hotkeys when game is not foreground (6346dd6)
+- Fix(scanner): stat fallback for data-table-only items (Cycles) (1f26e8a)
+
+### Features
+
+- Feat(ui): show changelog in-app instead of opening GitHub (82a4282)
+- Feat(changelog): auto-generate CHANGELOG.md on release (6ffa849)
+
+### Performance
+
+- Perf(scanner): map-marker pass on dedicated thread + TTL eviction (ed07bb1)
+
+## v1.19.1 — 2026-05-01
+
+### Bug Fixes
+
+- Fix(loot-history): readable item names + theme-agnostic panel chrome (9d247a2)
+
+## v1.19.0 — 2026-05-01
+
+### Features
+
+- Feat(loot-history): session pickup tracker with overlay panel (0748c64)
+
+## v1.18.0 — 2026-04-28
+
+### Bug Fixes
+
+- Fix(updater): surface install errors with manual-download fallback (acb6ba0)
+- Fix(hotkeys): allow bare keys and prevent duplicate bindings (e6e3014)
+- Fix(overlay): strip leaked window chrome on systems where decorations: false leaks (b70d0d0)
+- Fix(overlay): stop focus war and edge flicker on alt-tab (b97d7ba)
+- Fix(notifications): reverse stat order to match in-game tooltip (89d56a3)
+
+### Features
+
+- Feat(rules): add socket-count filter (sockets0..sockets6) (34188d1)
+- Feat(editor): accept autocomplete with Tab (2afd3f1)
+
+### Miscellaneous
+
+- Chore(profiles): refine default new-profile template rules (62849d4)
+
+## v1.17.0 — 2026-04-27
+
+### Features
+
+- Feat(loot-filter): category colors, shadow warnings, hover tooltips (3ad87b7)
+- Feat(loot-filter): linter errors on misplaced name pattern (2ec2aee)
+
+## v1.16.0 — 2026-04-27
+
+### Bug Fixes
+
+- Fix(notifications): show unique name for Tier0-base uniques (b437dbe)
+
+### Features
+
+- Feat(loot-filter): hold-to-reveal hotkey for hidden items (13f6941)
+
+## v1.15.1 — 2026-04-26
+
+### Bug Fixes
+
+- Fix(profiles): orange map quest items and Cube Reagent rule (0057bf2)
+- Fix(loot-filter): match name patterns against items.txt category prefix (949f450)
+
+## v1.15.0 — 2026-04-26
+
+### Bug Fixes
+
+- Fix: default profile (e0e181b)
+
+### Documentation
+
+- Docs(loot-filter): add user-facing gotchas guide (04bce3a)
+
+### Features
+
+- Feat(loot-filter): add sound7 flag (a94c7bd)
+- Feat(scanner): auto-enable MXL always-show-items on game entry (92de094)
+
+## v1.14.1 — 2026-04-25
+
+### Features
+
+- Feat(loot-filter): rework starter template hide rules (429db28)
+
+## v1.14.0 — 2026-04-24
+
+### Features
+
+- Add files via upload (c93650a)
+- Add files via upload (9eb0269)
+- Add files via upload (b2e51cc)
+- Feat(loot-filter): notify on all eth sacred in starter template (88d0437)
+- Add files via upload (8466c91)
+- Add files via upload (80afb3c)
+- Add files via upload (d386501)
+
+### Miscellaneous
+
+- Chore(public): downscale screenshots to ~620x460 (5d3f59a)
+
+## v1.13.0 — 2026-04-24
+
+### Bug Fixes
+
+- Fix(editor): bump comment color contrast in both themes (ed04ad2)
+
+## v1.12.0 — 2026-04-24
+
+### Bug Fixes
+
+- Fix(loot-filter): respect group header flags in notify-independence lint (310fcd0)
+
+### Features
+
+- Feat(loot-filter): seed Default-starter profile with MXL-based rules (5e85df5)
+
+## v1.11.0 — 2026-04-23
+
+### Bug Fixes
+
+- Fix(notifier): re-notify item dropped after pickup (b3235ec)
+- Fix(settings): preserve cross-window changes when saving (ef33de8)
+
+### Features
+
+- Feat(loot-filter): auto-save profiles on idle typing (b01f9fe)
+- Feat(loot-filter): seed a real Default profile on first run (f1e6151)
+
+### Miscellaneous
+
+- Chore: remove legacy AutoIt source and obsolete docs (9670c44)
+- Chore: untrack .vscode .claude (81a9b9b)
+
+### Performance
+
+- Perf(notifier): split pPaths scan from map-marker BFS pass (9f1d776)
+
+## v1.10.0 — 2026-04-23
+
+### Bug Fixes
+
+- Fix(loot-filter): resolve outstanding review bugs (8139e96)
+
+### Features
+
+- Feat(loot-filter): support multiple {regex} stat patterns per rule (AND) (188b1cc)
+- Feat(ui): desktop-feel polish and debug logging toggle (65210d1)
+- Feat(loot-filter): add map flag for in-game automap markers (ebf6ea0)
+
+## v1.9.0 — 2026-04-21
+
+### Features
+
+- Feat(notifications): honor rule-level color flag for item names (5573ff0)
+
+## v1.8.1 — 2026-04-21
+
+### Bug Fixes
+
+- Fix(updater): send Accept: octet-stream to fetch the binary asset (e4d9cfc)
+
+## v1.8.0 — 2026-04-21
+
+### Features
+
+- Feat(app): store log in app data dir; add "Open folder" button (abab594)
+
+### Refactor
+
+- Refactor(ui): tidy section headers and toolbar alignment (5a94ab1)
+
+## v1.7.0 — 2026-04-21
+
+### Bug Fixes
+
+- Fix(filter): auto-load active profile on startup (0e5b82e)
+- Fix(notifier): label low-wLvl TU uniques (e.g. Razordisk) correctly (d9b6904)
+
+### Features
+
+- Feat(updater): add GitHub Releases auto-updater (b872d31)
+- Feat(filter): highlight matched stat line in drop notifications (5b198b3)
+- Feat(sound): play drop notification sounds with master volume (b821569)
+- Feat(notifications): improve drop rendering and settings preview (de19ced)
+
+## v1.6.0 — 2026-04-21
+
+### Bug Fixes
+
+- Fix(ui): sync header version with package.json at build time (79741a8)
+- Eliminate loot-filter label flicker on fresh drops (bff0c0d)
+- Fix reattach bug (37374c0)
+- Survive project restart without re-launching Diablo II (4f3ed6d)
+
+### CI
+
+- Ci(release): grant pull-requests:read so git-cliff can query GitHub API (d967eae)
+- Ci(release): generate release notes from commits with git-cliff (6ea2f12)
+
+### Changes
+
+- Move drop notifications to top-left and hide overlay window border (c0be59c)
+- Redesign drop notification layout and drop the `name` filter flag (b67fd52)
+- Normalize autocomplete dictionary and version the items cache (12ae0fb)
+
+### Features
+
+- Add hold-hotkey overlay editor to reposition drop notifications (7a645a8)
+- Add uniques and set items to autocomplete dictionary (863a50f)
+- Add items autocomplete to loot-filter rules editor (00c7341)
+
+## v1.5.0 — 2026-04-19
+
+### Bug Fixes
+
+- Fix loot filter not syncing to scanner after profile load/save (d8dacab)
+
+### Changes
+
+- Removed docs (313fcfb)
+
+### Features
+
+- Support multi-quality/tier OR-matching and base_name regex (915f96a)
+- Implement MedianXL tier detection (C2 fix) (bea784d)
+- Add force-show filter mode and reduce scanner overhead (a476716)
+- Implement full loot filter trampoline and clean up scanner loop (575216a)
+- Add loot filter hook, rule matching enhancements, and documentation (b33bd93)
+- Add ThemeToggle component and refactor GeneralTab layout (16b0b0c)
+
+### Other
+
+- Sync pnpm-lock.yaml with package.json (7d43ef3)
+- New spec (6c9b497)
+- - Integrated ProfileSelector component for managing user profiles within the LootFilterTab. (5742608)
+- - Updated the `NotificationsTab` and `OverlayWindow` components to support customizable notification settings, including duration, font size, and opacity. (a2e2c89)
+- Enhance layout and styling for improved UI responsiveness (8d64d6a)
+- Enhance CodeMirror integration and validation features (833f1e1)
+
+### Refactor
+
+- Refactor loot filter engine to match new DSL specification (412a8e3)
+- Refactor UI styles and improve editor functionality (5dc04e9)
+
+## v1.2.1 — 2025-12-05
+
+### Features
+
+- Add CodeMirror dependencies and implement Loot Filter Editor (01fb59c)
+- Add known bugs documentation and improve memory management in injection process (92f459e)
+- Implement global hotkey functionality for toggling the main window in D2MXLUtils. Add HotkeyInput component for user configuration, integrate hotkey management in Tauri backend, and update settings store to persist hotkey preferences. Enhance UI to reflect hotkey settings in the General tab. (80bf329)
+- Implement settings management with persistence using Tauri plugin store. Add settings store and window state management, allowing users to save and load application settings. Update UI components to reflect settings changes, including theme and sound preferences. Adjust styles for overlay backgrounds. (d384fe9)
+
+### Refactor
+
+- Refactor rule management and integrate DSL parser for item filtering (f3a3bfd)
+
+## v1.2.0 — 2025-12-04
+
+### Changes
+
+- Update GitHub Actions workflow to build 32-bit Tauri app for Windows and adjust release asset path. (1cb5afd)
+
+## v1.1.0 — 2025-12-04
+
+### Other
+
+- Enhance release process in README and update GitHub Actions workflow. Added instructions for version bumping and release creation in README. Updated release job to use softprops/action-gh-release for asset uploads and set permissions for GitHub Actions. (965797d)
+
+## v1.0.4 — 2025-12-04
+
+### Changes
+
+- Remove pnpm version specification from GitHub Actions workflow (422d92e)
+
+## v1.0.3 — 2025-12-04
+
+### Changes
+
+- Update GitHub Actions workflow to set up pnpm version 10 and remove corepack enable step. (6e571b7)
+
+## v1.0.2 — 2025-12-04
+
+### Other
+
+- Sync version in Cargo.lock for d2mxlutils to 1.0.1 and update staging in sync-version script. (d4ffbd4)
+
+## v1.0.1 — 2025-12-04
+
+### Changes
+
+- Update GitHub Actions workflow to enable corepack for pnpm instead of using the pnpm setup action. (47065a9)
+- Update version to 1.0.0 (58a45d9)
+
+## v1.0.0 — 2025-12-04
+
+### Changes
+
+- Update dependencies and enhance logging in D2MXLUtils. Add chrono for timestamping log entries, update Cargo.toml and Cargo.lock to include new dependencies, and refactor logger to prepend timestamps to log messages for better traceability. (bc32ab7)
+- Remove unused print_string function and related injection logic from D2Injector. Update documentation to reflect the changes in available methods for item handling. (9e53e1b)
+- Update overlay documentation for fullscreen behavior in D2MXLUtils. Clarify functionality on native Windows and virtualized environments, detailing limitations and recommended user settings. Enhance user guidance for optimal overlay performance in various game modes. (31a8fb7)
+- Update package.json to use ES modules, enhance Cargo.toml with Windows dependencies, and implement process handling in Rust. Add icon file and improve memory management for process interactions. (9838623)
+
+### Features
+
+- Add husky dependency to pnpm-lock.yaml (c5c2fa2)
+- Add version synchronization script and GitHub release workflow for D2MXLUtils. (5a621ba)
+- Add README and restructure UI components for D2MXLUtils. (7205f5f)
+- Implement access privilege fixes for D2MXLUtils, including a custom Windows manifest for administrator rights, enabling SeDebugPrivilege for the current process, and configuring WebView2 user data folder for UAC-elevated scenarios. Update related documentation and enhance process handling in main.rs. (f3337e8)
+- Implement overlay window for D2MXLUtils with transparent, click-through functionality. Enhance synchronization with Diablo II's window position and size. Introduce a logging module for better debugging and document access issues related to process elevation. Update Svelte UI to support overlay-specific layouts and improve user experience. (a065cd9)
+
+### Other
+
+- Enhance scanner functionality in D2MXLUtils by adding overlay visibility management. Implement logic to show and hide the overlay window based on game status and scanner state, along with error handling for overlay operations. Update documentation to reflect these changes. (bbe138d)
+- Enhance D2MXLUtils with improved item scanning and UI updates. Refactor item handling in the DropScanner, implement logging for debugging, and optimize memory management in the injection layer. Update Svelte UI for better user experience and integrate event handling for game status and item drops. (20ab328)
+- Initialize D2MXLUtils project with Tauri, Rust, Svelte, and Tailwind. Add core files including package.json, configuration files, and initial source structure. Implement basic functionality for the Drop Notifier overlay, including event handling and UI components. (0d47793)
+
+### Refactor
+
+- Refactor D2MXLUtils UI by removing Tailwind CSS and implementing a custom CSS architecture. Introduce a dark theme and restructure components for better maintainability. Update package.json to reflect the removal of Tailwind dependencies and enhance the overall styling with new CSS variables and components. (4e16f82)
+- Refactor logging in Rust backend to use a unified logging layer instead of direct `println!`/`eprintln!` calls. Update documentation to reflect logging practices and ensure messages are mirrored to stdout/stderr for debugging. Enhance `CLAUDE.md` with logging guidelines and update related files for consistency. (8d0dbe7)
+- Refactor D2MXLUtils project by completing several Rust modules, enhancing the scanner functionality, and removing the outdated index documentation. Update Cargo.toml to include additional Windows features and improve thread management for the item scanner. (4f3eb75)
+
+
