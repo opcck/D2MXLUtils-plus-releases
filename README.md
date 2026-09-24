@@ -13,7 +13,7 @@
 
 ### Documentation
 
-- Docs: 调整 v1.28.19 更新日志条目说明为修复bug (d4fa0aa)
+- Docs: 修复bug 
 
 ### Features
 
