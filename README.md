@@ -13,7 +13,7 @@
 
 ### Bug Fixes
 
-- Fix(radar): 动态特征码扫描自适应适配新版 D2Sigma.dll，修复小地图怪物雷达失效问题 (829018c)
+- Fix(radar): 修复小地图怪物雷达失效问题 (829018c)
 
 ### Miscellaneous
 
@@ -23,7 +23,7 @@
 
 ### Documentation
 
-- Docs: 调整 v1.28.19 更新日志条目说明为修复bug (d4fa0aa)
+- Docs: 调整 v1.28.19 修复bug (d4fa0aa)
 
 ### Features
 
