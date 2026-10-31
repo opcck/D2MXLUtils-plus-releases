@@ -9,21 +9,16 @@
 
 # Changelog
 
-## v1.29.0 — 2026-10-31
-
-### Bug Fixes
-
-- Fix(notification): avoid duplicate hover commands (3ef2254)
-- Fix(auto-pickup): complete cube pickup diagnostics (a3979f4)
-- Fix(injection): resolve type mismatch and missing variable in install.rs (3829d99)
-- Fix(auto_pickup): resolve cube pickup stalls and map-transition drops (bb43892)
-- Fix(filter-generator): reserve frequency capture prefix (a7d6d6f)
+## v1.29.1 — 2026-10-31
 
 ### Features
 
-- Feat(hotkey): add reveal hidden toggle mode (4f5def6)
-- Feat(notification): show hovered item details (6d94abc)
-- Feat(filter-generator): support stat occurrence matching (a83e047)
+- 支持规则生成器多选条件与内置词条自动切换。
+- 支持相同词条出现次数匹配与命中行高亮。
+- 保留频次捕获组前缀，避免自定义正则冲突。
+- 修复自动拾取切图后方块拾取停滞问题。
+- 增加背包、方块悬停装备通知及词条高亮。
+- 增加强制显示隐藏物品的长按与开关模式。
 
 ## v1.28.38 — 2026-10-28
 
