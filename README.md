@@ -6,7 +6,6 @@
 - 📝 **更新日志**：详见下方或查阅 [CHANGELOG.md](./CHANGELOG.md)。
 
 ---
-
 # Changelog
 
 ## v1.29.2 — 2026-11-05
@@ -28,12 +27,6 @@
 - 修复自动拾取切图后方块拾取停滞问题。
 - 增加背包、方块悬停装备通知及词条高亮。
 - 增加强制显示隐藏物品的长按与开关模式。
-
-## v1.29.1 — 2026-10-31
-
-### CI
-
-- Ci: pass release notes to updater release and remove obsolete target input (0823f79)
 
 ## v1.29.0 — 2026-10-31
 
