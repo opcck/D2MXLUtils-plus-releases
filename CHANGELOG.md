@@ -20,12 +20,6 @@
 - 增加背包、方块悬停装备通知及词条高亮。
 - 增加强制显示隐藏物品的长按与开关模式。
 
-## v1.29.1 — 2026-10-31
-
-### CI
-
-- Ci: pass release notes to updater release and remove obsolete target input (0823f79)
-
 ## v1.29.0 — 2026-10-31
 
 ### Bug Fixes
