@@ -9,6 +9,12 @@
 
 # Changelog
 
+## v1.29.4 — 2026-11-23
+
+### Bug Fixes
+
+- 修复了“Halt Location : , line #660 Expression : Unrecoverable internal error 6fb1077d”报错
+
 ## v1.29.3 — 2026-11-12
 
 ### Bug Fixes
